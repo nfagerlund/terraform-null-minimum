@@ -22,7 +22,7 @@ output "random" {
 }
 
 output "username" {
-  value = "Username is ${var.username}. Extra text."
+  value = "Username is ${var.username}. Extra text?"
 }
 
 # data "terraform_remote_state" "dev" {
