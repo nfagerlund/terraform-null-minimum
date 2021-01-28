@@ -4,7 +4,7 @@ variable "username" {
 provider "random" { # an empty for destroying old resources
 }
 
-resource "null_resource" "randomm" {
+resource "null_resource" "random" {
   triggers = {
     username = var.username
   }
@@ -13,12 +13,12 @@ resource "null_resource" "randomm" {
   #   command = "curl https://beyondgrep.com/ack-v3.1.1 > ./ack && chmod 0755 ./ack"
   # }
   # provisioner "local-exec" {
-  #   command = "./ack randomm"
+  #   command = "./ack random"
   # }
 }
 
 output "random" {
-  value = "Changed to ${null_resource.randomm.id}"
+  value = "Changed to ${null_resource.random.id}"
 }
 
 output "username" {
