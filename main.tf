@@ -18,7 +18,7 @@ resource "null_resource" "randomm" {
 }
 
 output "random" {
-  value = "Changed to: ${null_resource.randomm.id}"
+  value = "Changed to ${null_resource.randomm.id}"
 }
 
 output "username" {
