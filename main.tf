@@ -8,6 +8,10 @@ resource "null_resource" "random" {
   triggers = {
     username = var.username
   }
+
+  provisioner "local-exec" {
+    command = "sleep 20"
+  }
   # only changes when configuration edited, or when username changes.
   # provisioner "local-exec" {
   #   command = "curl https://beyondgrep.com/ack-v3.1.1 > ./ack && chmod 0755 ./ack"
