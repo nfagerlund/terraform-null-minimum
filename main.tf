@@ -12,6 +12,5 @@ output "random" {
 }
 
 output "username" {
-  value = "Username is ${var.username}. Extra text???"
+  value = "Username is ${var.username}. Extra text!!"
 }
-
